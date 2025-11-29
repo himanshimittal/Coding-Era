@@ -1,16 +1,20 @@
 #include<iostream>
+#include<vector>
+#include<algorithm>
 using namespace std;
 bool anagram_1(string s1,string s2){
     if(s1.length()!=s2.length()){
         return false;
     }
     vector<int> v(256,0);
-    for(int i = 0;i < s1.length();i++){
-        v[s1[i]-'0']++;
+    for(size_t i = 0;i < s1.length();i++){
+        unsigned char c = static_cast<unsigned char>(s1[i]);
+        v[c]++;
     }
-    for(int i = 0;i < s2.length();i++){
-        v[s2[i]-'0']--;
-        if(v[s2[i]-'0']<0){
+    for(size_t i = 0;i < s2.length();i++){
+        unsigned char c = static_cast<unsigned char>(s2[i]);
+        v[c]--;
+        if(v[c] < 0){
             return false;
         }
     }
