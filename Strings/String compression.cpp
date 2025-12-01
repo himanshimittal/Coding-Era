@@ -25,9 +25,8 @@ int compressed(vector<char>& str) {
             }
         }
 
-        i += groupLength;   // move to next group
+        i += groupLength;  
     }
-
     return res;
 }
 
