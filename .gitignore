@@ -1,0 +1,45 @@
+# Build artifacts
+*.o
+*.out
+*.exe
+*.a
+*.so
+*.dylib
+
+# Debug symbols (macOS)
+*.dSYM/
+
+# Compiled binaries (no extension or common names)
+/Arrays/output/*
+/Sorting + Searching/output/*
+/Stacks/output/*
+/Strings/output/*
+!*.cpp
+!*.md
+
+# IDE and OS
+.vscode/
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Executables without extension (common in algorithm projects)
+Binary search
+First & last occurrence
+Peak element
+Check anagram
+Longest Palindromic Substring
+Longest substring without repeating characters
+Reverse Vowels of a String
+Reverse_Words_in_a_String
+Reverse_a _string
+String compression
+Buy & Sell Stock
+Cyclic rotation
+Kadane's Algorithm*
+Leaders in Array
+Merge intervals
+Next Greater Element
+Sort colors
+Two Sum
